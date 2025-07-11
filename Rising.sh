@@ -18,7 +18,7 @@ echo "Sync success"
 echo "============="
 
 # Sync Trees
-git clone --depth=1 https://github.com/NotWorthy01/device-xiaomi-haydn-b lineage-22.2 device/xiaomi/haydn
+git clone --depth=1 https://github.com/NotWorthy01/device-xiaomi-haydn -b lineage-22.2 device/xiaomi/haydn
 
 
 # Set up build environment
