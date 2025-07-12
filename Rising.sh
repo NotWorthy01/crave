@@ -17,6 +17,8 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+#sync thermal
+git clone https://github.com/LineageOS/android_hardware_qcom_thermal -b lineage-23.0-legacy-um hardware/qcom-caf/thermal-legacy-um
 # Sync Trees
 git clone --depth=1 https://github.com/NotWorthy01/device-xiaomi-haydn -b lineage-22.2 device/xiaomi/haydn
 
@@ -26,7 +28,7 @@ git clone --depth=1 https://github.com/NotWorthy01/device-xiaomi-haydn -b lineag
 echo "============="
 
 # vendorset.sh delete
-rm -rf device/xiaomi/haydn/vendorsetup.sh
+rm device/xiaomi/haydn/vendorsetup.sh
 echo "============="
 echo "Vendorsetup.sh delete"
 echo "============="
