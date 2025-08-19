@@ -1,10 +1,10 @@
-repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --no-clone-bundle
+repo init -u https://github.com/DerpFest-AOSP/android_manifest.git -b 16 --git-lfs
 
 rm -rf prebuilts/clang/host/linux-x86
 
 /opt/crave/resync.sh
 
-git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b crd device/xiaomi/haydn
+git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b derp device/xiaomi/haydn
 
 . b*/e*
 
@@ -12,4 +12,6 @@ curl -sSf https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script
 
 . b*/e*
 
-brunch haydn
+lunch lineage_haydn-bp2a-userdebug
+
+mka derp
