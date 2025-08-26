@@ -1,4 +1,4 @@
-repo init -u https://github.com/RisingOS-Revived/android -b sixteen --git-lfs
+repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
 
 rm -rf prebuilts/clang/host/linux-x86
 
