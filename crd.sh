@@ -1,4 +1,4 @@
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
+repo init -u https://github.com/DerpFest-AOSP/android_manifest.git -b 16 --git-lfs
 
 /opt/crave/resync.sh
 
@@ -6,18 +6,16 @@ repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
 
 /opt/crave/resync.sh
 
-git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b axion device/xiaomi/haydn
+git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b 16 device/xiaomi/haydn
 
 . build/envsetup.sh
 
 rm device/xiaomi/haydn/vendorsetup.sh
 
-#curl -sSf https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script-auto/main/create-signed-env.sh | bash
-
-gk -s
+curl -sSf https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script-auto/main/create-signed-env.sh | bash
 
 . build/envsetup.sh
 
-axion haydn userdebug gms core
+lunch lineage_haydn-bp2a-userdebug
 
-ax -br userdebug
+mka derp
