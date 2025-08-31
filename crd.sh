@@ -10,15 +10,12 @@ rm -rf prebuilts/clang/host/linux-x86
 
 git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b rising device/xiaomi/haydn
 
-. build/envsetup.sh
-
-rm device/xiaomi/haydn/vendorsetup.sh
-
-#curl -sSf https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script-auto/main/create-signed-env.sh | bash
+. b*/e*
 
 gk -f
 
 . build/envsetup.sh
 
 riseup haydn userdebug
+
 rise sb
