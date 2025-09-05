@@ -1,4 +1,4 @@
-repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --no-clone-bundle
+repo init -u https://github.com/The-Clover-Project/manifest.git -b 16 --git-lfs
 
 rm -rf prebuilts/clang/host/linux-x86
 
@@ -8,14 +8,16 @@ rm -rf prebuilts/clang/host/linux-x86
 
 /opt/crave/resync.sh
 
-git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b crd device/xiaomi/haydn
+git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b clov device/xiaomi/haydn
+
+source build/envsetup.sh
 
 . b*/e*
 
 curl -sSf https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script-auto/main/create-signed-env.sh | bash
 
-#gk -f
-
 . build/envsetup.sh
 
-brunch haydn
+lunch clover_haydn-bp2a-userdebug
+
+mka clover -j$(nproc --all)
