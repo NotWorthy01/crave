@@ -1,4 +1,4 @@
-repo init -u https://github.com/The-Clover-Project/manifest.git -b 16 --git-lfs
+repo init -u https://git.halogenos.org/halogenOS/android_manifest.git -b XOS-16.0
 
 rm -rf prebuilts/clang/host/linux-x86
 
@@ -8,7 +8,7 @@ rm -rf prebuilts/clang/host/linux-x86
 
 /opt/crave/resync.sh
 
-git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b clo device/xiaomi/haydn
+git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b halo device/xiaomi/haydn
 
 source build/envsetup.sh
 
@@ -18,6 +18,4 @@ curl -sSf https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script
 
 . build/envsetup.sh
 
-lunch clover_haydn-bp2a-userdebug
-
-mka clover -j$(nproc --all)
+build full aosp_haydn-bp1a-userdebug noclean
