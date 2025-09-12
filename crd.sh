@@ -8,7 +8,7 @@ rm -rf prebuilts/clang/host/linux-x86
 
 /opt/crave/resync.sh
 
-git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b crd device/xiaomi/haydn
+git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b test device/xiaomi/haydn
 
 source build/envsetup.sh
 
