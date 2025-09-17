@@ -14,7 +14,7 @@ source build/envsetup.sh
 
 rm -rf kernel/xiaomi/sm8350
 
-git clone --depth=1 https://github.com/NotWorthy01/android_kernel_xiaomi_sm8350 -b lineage-22.2 kernel/xiaomi/sm8350
+git clone https://github.com/Haydn-Lab/kernel_xiaomi_haydn -b lineage-22.2 kernel/xiaomi/sm8350
 
 . b*/e*
 
