@@ -26,6 +26,10 @@ git clone https://github.com/NotWorthy01/android_hardware_lineage_compat -b 23 h
 
 . b*/e*
 
+source build/envsetup.sh
+
+source build/make/envsetup.sh
+
 #curl -sSf https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script-auto/main/create-signed-env.sh | bash
 gk -f
 
