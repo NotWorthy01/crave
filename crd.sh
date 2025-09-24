@@ -22,10 +22,16 @@ git clone https://github.com/NotWorthy01/android_hardware_lineage_compat -b 23 h
 
 . b*/e*
 
+. b*/e*
+
+. b*/e*
+
 #curl -sSf https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script-auto/main/create-signed-env.sh | bash
 gk -f
 
 . build/envsetup.sh
+
+riseup haydn userdebug
 
 riseup haydn userdebug
 
