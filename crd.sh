@@ -10,7 +10,7 @@ rm -rf prebuilts/clang/host/linux-x86
 
 git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b rising device/xiaomi/haydn
 
-source build/envsetup.sh
+. b*/e*
 
 rm -rf kernel/xiaomi/sm8350
 
