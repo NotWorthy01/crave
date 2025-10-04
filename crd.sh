@@ -8,13 +8,11 @@ rm -rf prebuilts/clang/host/linux-x86
 
 /opt/crave/resync.sh
 
-git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b rising device/xiaomi/haydn
-
 . b*/e*
 
 rm -rf kernel/xiaomi/sm8350
 
-git clone https://github.com/Haydn-Lab/kernel_xiaomi_haydn -b lineage-22.2 kernel/xiaomi/sm8350
+git clone https://github.com/NotWorthy01/android_kernel_xiaomi_sm8350 -b lineage-22.2 kernel/xiaomi/sm8350
 
 rm -rf hardware/lineage/compat
 
