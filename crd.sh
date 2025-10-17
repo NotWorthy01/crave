@@ -18,7 +18,6 @@ git clone https://github.com/NotWorthy01/android_hardware_lineage_compat -b 23 h
 
 . b*/e*
 
-
 curl -sSf https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script-auto/main/create-signed-env.sh | bash
 #gk -f
 
@@ -28,11 +27,18 @@ lunch lineage_haydn-bp2a-userdebug
 
 mka derp
 
-rm -rf device/xiaomi/haydn
+ROM_ZIP=$(ls -t out/target/product/*/*.zip | head -n 1)
 
+curl -T "$ROM_ZIP" -u :7a50f24b-5cc6-499d-a787-addf887c9dc2 https://pixeldrain.com/api/file/
+
+rm -rf device/xiaomi/haydn
 
 git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b derp device/xiaomi/haydn
 
 lunch lineage_haydn-bp2a-userdebug
 
 mka derp
+
+ROM_ZIP1=$(ls -t out/target/product/*/*.zip | head -n 1)
+
+curl -T "$ROM_ZIP" -u :7a50f24b-5cc6-499d-a787-addf887c9dc2 https://pixeldrain.com/api/file/
