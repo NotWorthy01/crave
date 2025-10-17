@@ -29,7 +29,7 @@ mka derp
 
 ROM_ZIP=$(ls -t out/target/product/*/*.zip | head -n 1)
 
-curl -T "$ROM_ZIP" -u :7a50f24b-5cc6-499d-a787-addf887c9dc2 https://pixeldrain.com/api/file/
+curl -O https://raw.githubusercontent.com/Sushrut1101/GoFile-Upload/refs/heads/master/upload.sh && bash upload.sh "$ROM_ZIP"
 
 rm -rf device/xiaomi/haydn
 
@@ -41,4 +41,4 @@ mka derp
 
 ROM_ZIP1=$(ls -t out/target/product/*/*.zip | head -n 1)
 
-curl -T "$ROM_ZIP" -u :7a50f24b-5cc6-499d-a787-addf887c9dc2 https://pixeldrain.com/api/file/
+curl -O https://raw.githubusercontent.com/Sushrut1101/GoFile-Upload/refs/heads/master/upload.sh && bash upload.sh "$ROM_ZIP1"
