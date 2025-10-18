@@ -26,19 +26,3 @@ curl -sSf https://raw.githubusercontent.com/Trijal08/crDroid-build-signed-script
 lunch lineage_haydn-bp2a-userdebug
 
 mka derp
-
-ROM_ZIP=$(ls -t out/target/product/*/*.zip | head -n 1)
-
-curl -O https://raw.githubusercontent.com/Sushrut1101/GoFile-Upload/refs/heads/master/upload.sh && bash upload.sh "$ROM_ZIP"
-
-rm -rf device/xiaomi/haydn
-
-git clone https://github.com/NotWorthy01/device_xiaomi_haydn -b derp device/xiaomi/haydn
-
-lunch lineage_haydn-bp2a-userdebug
-
-mka derp
-
-ROM_ZIP1=$(ls -t out/target/product/*/*.zip | head -n 1)
-
-curl -O https://raw.githubusercontent.com/Sushrut1101/GoFile-Upload/refs/heads/master/upload.sh && bash upload.sh "$ROM_ZIP1"
