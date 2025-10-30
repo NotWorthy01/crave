@@ -25,6 +25,6 @@ gk -f
 . build/envsetup.sh
 . build/envsetup.sh
 
-riseuo haydn userdebug
+riseup haydn userdebug
 
 rise sb
